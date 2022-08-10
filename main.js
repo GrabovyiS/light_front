@@ -6,7 +6,7 @@ const light = document.querySelector(".light");
 // light.innerHTML = "32";
 
 function getCount() {
-    fetch("http://spgrabovyi.pythonanywhere.com/light/")
+    fetch("https://spgrabovyi.pythonanywhere.com/light/")
         .then((response) => {
             return response.json();
         })
@@ -16,7 +16,7 @@ function getCount() {
 }
 
 function postLight() {
-    fetch("http://spgrabovyi.pythonanywhere.com/light/", {
+    fetch("https://spgrabovyi.pythonanywhere.com/light/", {
         method: "POST",
         body: JSON.stringify({ count: 1 }),
         headers: new Headers({ "content-type": "application/json" }),
