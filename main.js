@@ -6,9 +6,8 @@ const light = document.querySelector(".light");
 // light.innerHTML = "32";
 
 function getCount() {
-    fetch("http://127.0.0.1:8000/light/")
+    fetch("http://spgrabovyi.pythonanywhere.com/light/")
         .then((response) => {
-            console.log(response);
             return response.json();
         })
         .then((data) => {
@@ -17,7 +16,7 @@ function getCount() {
 }
 
 function postLight() {
-    fetch("http://127.0.0.1:8000/light/", {
+    fetch("http://spgrabovyi.pythonanywhere.com/light/", {
         method: "POST",
         body: JSON.stringify({ count: 1 }),
         headers: new Headers({ "content-type": "application/json" }),
@@ -49,7 +48,3 @@ buttonContainer.addEventListener("click", () => {
     }, 3000);
     getCount();
 });
-
-setInterval(function () {
-    getCount();
-}, 10000); //run this thang every 10 seconds
