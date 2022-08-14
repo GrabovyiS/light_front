@@ -43,7 +43,7 @@ buttonContainer.addEventListener("click", () => {
     postLight();
     orb.classList.add("glow");
     +light.innerHTML++
-    getCount();
+    // getCount();
     setTimeout(() => {
         orb.classList.remove("glow");
     }, 3000);
