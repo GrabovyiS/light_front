@@ -1,112 +1,113 @@
-$one: violet;
-$two: #0ff;
-$three: rgb(46, 6, 46);
-$four: rgb(117, 57, 17);
-
 body {
-    background: #000;
-    font-family: "Roboto", sans-serif;
-    overflow: hidden;
+  background: #000;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
 }
 
 .light {
-    padding-left: 16px;
-    margin-bottom: 50px;
+  padding-left: 16px;
+  margin-bottom: 50px;
 }
 
 .container {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    position: absolute;
-    top: 35%;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  position: absolute;
+  top: 35%;
 }
 
 .text {
-    text-align: center;
-    transition: color 1s;
+  text-align: center;
+  transition: color 1s;
 }
 
 .texts {
-    margin-top: 14vh;
+  margin-top: 14vh;
 }
 
 .text-container {
-    width: 300px;
-    height: 300px;
-    max-width: 50vw;
-    max-height: 50vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+  width: 300px;
+  height: 300px;
+  max-width: 50vw;
+  max-height: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
 }
 
 .text {
-    color: rgb(221, 221, 221);
-    font-weight: 800;
-    letter-spacing: 8px;
-    font-size: 34px;
-    cursor: default;
-    z-index: 5;
+  color: #dddddd;
+  font-weight: 800;
+  letter-spacing: 8px;
+  font-size: 34px;
+  cursor: default;
+  z-index: 5;
 }
 
 .white {
-    color: white;
+  color: white;
 }
 
 .orb {
-    outline: none;
-    border: none;
-    animation: spin 4s linear infinite;
-    width: 300px;
-    height: 300px;
-    max-width: 50vw;
-    max-height: 50vw;
-    position: absolute;
-    border-radius: 50%;
-    box-shadow: inset 0 0 50px rgb(117, 117, 117), inset 20px 0 60px $three,
-        inset -20px 0 60px $four, inset 20px 0 300px $three,
-        inset -20px 0 300px $four, 0 0 50px rgb(117, 117, 117),
-        -10px 0 60px $three, 10px 0 60px $four;
-    transition: box-shadow 1s ease-out;
+  outline: none;
+  border: none;
+  animation: spin 4s linear infinite;
+  width: 300px;
+  height: 300px;
+  max-width: 50vw;
+  max-height: 50vw;
+  position: absolute;
+  border-radius: 50%;
+  -moz-box-shadow: inset 0 0 50px #757575, inset 20px 0 60px #2e062e, inset -20px 0 60px #753911, inset 20px 0 300px #2e062e, inset -20px 0 300px #753911, 0 0 50px #757575, -10px 0 60px #2e062e, 10px 0 60px #753911;
+  -webkit-box-shadow: inset 0 0 50px #757575, inset 20px 0 60px #2e062e, inset -20px 0 60px #753911, inset 20px 0 300px #2e062e, inset -20px 0 300px #753911, 0 0 50px #757575, -10px 0 60px #2e062e, 10px 0 60px #753911;
+  box-shadow: inset 0 0 50px #757575, inset 20px 0 60px #2e062e, inset -20px 0 60px #753911, inset 20px 0 300px #2e062e, inset -20px 0 300px #753911, 0 0 50px #757575, -10px 0 60px #2e062e, 10px 0 60px #753911;
+  -webkit-transition: box-shadow 1s ease-out;
+  -moz-transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
 }
 
 .orb-hover {
-    transition: box-shadow 1s ease-in-out;
-    box-shadow: inset 0 0 50px #fff, inset 20px 0 60px $one,
-        inset -20px 0 60px $two, inset 20px 0 300px $one,
-        inset -20px 0 300px $two, 0 0 50px #fff, -10px 0 60px $one,
-        10px 0 60px $two;
+  -webkit-transition: box-shadow 1s ease-in-out;
+  -moz-transition: box-shadow 1s ease-in-out;
+  transition: box-shadow 1s ease-in-out;
+  -webkit-box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
+  -moz-box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
 }
 
 @keyframes spin {
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 h1.text {
-    font-size: 26px;
-    font-weight: 400;
-    letter-spacing: 2px;
+  font-size: 26px;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
 
 .glow {
-    box-shadow: inset 0 0 50px #fff, inset 20px 0 60px $one,
-        inset -20px 0 60px $two, inset 20px 0 300px $one,
-        inset -20px 0 300px $two, 0 0 50px #fff, -10px 0 60px $one,
-        10px 0 60px $two, 0px 0px 50vw 30vw #ffffff;
+  -moz-box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff, 0px 0px 50vw 30vw #ffffff;
+  -webkit-box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff, 0px 0px 50vw 30vw #ffffff;
+  box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff, 0px 0px 50vw 30vw #ffffff;
 }
 
 @media screen and (max-width: 420px) {
-    h1.text {
-        font-size: 22px;
-    }
-    p.text {
-        font-weight: 900;
-        font-size: 28px;
-    }
+  h1.text {
+    font-size: 22px;
+  }
+
+  p.text {
+    font-weight: 900;
+    font-size: 28px;
+  }
 }
+
+/*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.scss.map */

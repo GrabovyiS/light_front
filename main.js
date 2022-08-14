@@ -42,6 +42,7 @@ buttonContainer.addEventListener("mouseleave", () => {
 buttonContainer.addEventListener("click", () => {
     postLight();
     orb.classList.add("glow");
+    +light.innerHTML++
     getCount();
     setTimeout(() => {
         orb.classList.remove("glow");

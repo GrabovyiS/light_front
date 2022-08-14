@@ -61,12 +61,20 @@ body {
   max-height: 50vw;
   position: absolute;
   border-radius: 50%;
+  -moz-box-shadow: inset 0 0 50px #757575, inset 20px 0 60px #2e062e, inset -20px 0 60px #753911, inset 20px 0 300px #2e062e, inset -20px 0 300px #753911, 0 0 50px #757575, -10px 0 60px #2e062e, 10px 0 60px #753911;
+  -webkit-box-shadow: inset 0 0 50px #757575, inset 20px 0 60px #2e062e, inset -20px 0 60px #753911, inset 20px 0 300px #2e062e, inset -20px 0 300px #753911, 0 0 50px #757575, -10px 0 60px #2e062e, 10px 0 60px #753911;
   box-shadow: inset 0 0 50px #757575, inset 20px 0 60px #2e062e, inset -20px 0 60px #753911, inset 20px 0 300px #2e062e, inset -20px 0 300px #753911, 0 0 50px #757575, -10px 0 60px #2e062e, 10px 0 60px #753911;
+  -webkit-transition: box-shadow 1s ease-out;
+  -moz-transition: box-shadow 1s ease-out;
   transition: box-shadow 1s ease-out;
 }
 
 .orb-hover {
+  -webkit-transition: box-shadow 1s ease-in-out;
+  -moz-transition: box-shadow 1s ease-in-out;
   transition: box-shadow 1s ease-in-out;
+  -webkit-box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
+  -moz-box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
   box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff;
 }
 
@@ -76,6 +84,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
 h1.text {
   font-size: 26px;
   font-weight: 400;
@@ -83,6 +92,8 @@ h1.text {
 }
 
 .glow {
+  -moz-box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff, 0px 0px 50vw 30vw #ffffff;
+  -webkit-box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff, 0px 0px 50vw 30vw #ffffff;
   box-shadow: inset 0 0 50px #fff, inset 20px 0 60px violet, inset -20px 0 60px #0ff, inset 20px 0 300px violet, inset -20px 0 300px #0ff, 0 0 50px #fff, -10px 0 60px violet, 10px 0 60px #0ff, 0px 0px 50vw 30vw #ffffff;
 }
 
@@ -96,5 +107,8 @@ h1.text {
     font-size: 28px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.scss.map */
 
 /*# sourceMappingURL=style.css.map */
